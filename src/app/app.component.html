@@ -6,7 +6,11 @@
 </div>
 
 <div class="courses">
+  <!-- saving this
   <app-course-card [course]="csci160" ></app-course-card>
   <app-course-card [course]="csci161" ></app-course-card>
   <app-course-card [course]="csci213" ></app-course-card>
+  -->
+  <!-- can use the directives do automate the creation-->
+<app-course-card *ngFor = "let c of courseList" [course]="c"></app-course-card>
 </div>
